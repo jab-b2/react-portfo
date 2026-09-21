@@ -1,15 +1,24 @@
 import './navbar.css'
+import Button from './subcomponents/Button'
 
-function NavBar(){
-    return(
-        <header className='navbar'>
-            <o>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Art</li>
-            </o>
-        </header>
+const PAGES = ['Home','About']
+
+function NavBar({ currentPage, setCurrentPage }) {
+    return (
+        <nav className='navbar'>
+            <ul>
+                {PAGES.map((page) => (
+                    <li key={page}>
+                        <Button
+                            active={currentPage === page}
+                            onClick={() => setCurrentPage(page)}
+                        >
+                            {page}
+                        </Button>
+                    </li>
+                ))}
+            </ul>
+        </nav>
     )
 }
 

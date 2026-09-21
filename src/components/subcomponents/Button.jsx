@@ -1,9 +1,8 @@
-
 import './button.css'
 
-function Button({children}){
-    return(
-        <button className="button">
+function Button({ children, active, ...props }) {
+    return (
+        <button className={`button ${active ? 'button-active' : ''}`} {...props}>
             {children}
         </button>
     )
