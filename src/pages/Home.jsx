@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div><h2>what</h2></div>
+        <div><h2>Home</h2>Welcome to my Portfolio!</div>
     )
 }
 export default Home;

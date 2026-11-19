@@ -1,0 +1,14 @@
+.image-frame{
+    padding: 10px;
+    margin: 10px;
+    border: solid;
+    border-color: white;
+    width: 300px;
+    transition-duration: 0.3s;
+    
+}
+
+.image-frame:hover{
+    width: 350px
+
+}

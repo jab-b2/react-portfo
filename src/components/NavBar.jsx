@@ -1,7 +1,7 @@
 import './navbar.css'
 import Button from './subcomponents/Button'
 
-const PAGES = ['Home','About']
+const PAGES = ['Home','About','Projects','Art']
 
 function NavBar({ currentPage, setCurrentPage }) {
     return (
